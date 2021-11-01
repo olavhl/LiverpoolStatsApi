@@ -40,6 +40,17 @@ namespace LiverpoolStatsApi
             );
 
             services.AddSingleton<PlayerService>();
+            // Handling CORS
+            services.AddCors(
+                options => {
+                    options.AddPolicy("AllowAll",
+                        builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                    );
+                }
+            );
 
 
             services.AddControllers();
@@ -58,6 +69,8 @@ namespace LiverpoolStatsApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LiverpoolStatsApi v1"));
             }
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
