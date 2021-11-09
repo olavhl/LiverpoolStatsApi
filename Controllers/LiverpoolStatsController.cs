@@ -17,9 +17,16 @@ namespace LiverpoolStatsApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Player> Get()
+        public IEnumerable<Player> GetPlayers()
         {
-            return _playerService.Get();
+            return _playerService.GetPlayers();
+        }
+
+        [HttpPost]
+        public Player PostPlayer(Player newPlayer)
+        {
+            _playerService.PostPlayer(newPlayer);
+            return newPlayer;
         }
     }
 }

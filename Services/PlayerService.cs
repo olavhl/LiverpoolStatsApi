@@ -16,9 +16,15 @@ namespace LiverpoolStatsApi.Services
                 _players = database.GetCollection<Player>( settings.PlayersCollectionName );
         }
 
-        public List<Player> Get()
+        public List<Player> GetPlayers()
         {
             return _players.Find( player => true ).ToList();
+        }
+
+        public Player PostPlayer(Player newPlayer)
+        {
+            _players.InsertOne( newPlayer );
+            return newPlayer;
         }
             
     }

@@ -43,7 +43,7 @@ namespace LiverpoolStatsApi
             // Handling CORS
             services.AddCors(
                 options => {
-                    options.AddPolicy("AllowAll",
+                    options.AddPolicy("AllowAny",
                         builder => builder
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
@@ -70,7 +70,14 @@ namespace LiverpoolStatsApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LiverpoolStatsApi v1"));
             }
 
-            app.UseCors("AllowAll");
+            // Setting the default site of the webapi
+            // TODO: ?????
+            // DefaultFilesOptions newOptions = new DefaultFilesOptions();
+            // newOptions.DefaultFileNames.Append("index.html");
+            // app.UseDefaultFiles(newOptions);
+
+
+            app.UseCors("AllowAny");
 
             app.UseHttpsRedirection();
 
