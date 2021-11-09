@@ -13,5 +13,6 @@ namespace LiverpoolStatsApi.Models
         public int Age { get; set; }
         public string Country { get; set; }
         public string Position { get; set; }
+        public string Image { get; set; }
     }
 }
