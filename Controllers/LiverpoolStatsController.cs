@@ -28,5 +28,19 @@ namespace LiverpoolStatsApi.Controllers
             _playerService.PostPlayer(newPlayer);
             return newPlayer;
         }
+
+        [HttpDelete("{id:length(24)}")]
+        public IActionResult Delete(string id)
+        {
+            var player = _playerService.GetPlayer(id);
+
+            if (player == null)
+            {
+                return NotFound();
+            }
+
+            _playerService.RemovePlayer( player.Id );
+            return NoContent();
+        }
     }
 }
