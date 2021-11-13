@@ -32,6 +32,11 @@ namespace LiverpoolStatsApi.Services
             return newPlayer;
         }
 
+        public void UpdatePlayer(Player updatedPlayer)
+        {
+            _players.ReplaceOne( player => player.Id == updatedPlayer.Id, updatedPlayer);
+        }
+
         public void RemovePlayer(string id)
         {
             _players.DeleteOne( player => player.Id == id );

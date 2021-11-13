@@ -31,7 +31,6 @@ C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\staticwebassets\Liverp
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\staticwebassets\LiverpoolStatsApi.StaticWebAssets.xml
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\scopedcss\bundle\LiverpoolStatsApi.styles.css
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\LiverpoolStatsApi.RazorTargetAssemblyInfo.cache
-C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\LiverpoolStatsApi.csproj.CopyComplete
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\LiverpoolStatsApi.dll
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\ref\LiverpoolStatsApi.dll
 C:\Users\ohala\desktop\LiverpoolStatsApi\obj\Debug\net5.0\LiverpoolStatsApi.pdb
