@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ohala\\Desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj": {}
+    "C:\\Users\\ohala\\desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ohala\\Desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj": {
+    "C:\\Users\\ohala\\desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ohala\\Desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj",
+        "projectUniqueName": "C:\\Users\\ohala\\desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj",
         "projectName": "LiverpoolStatsApi",
-        "projectPath": "C:\\Users\\ohala\\Desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj",
+        "projectPath": "C:\\Users\\ohala\\desktop\\LiverpoolStatsApi\\LiverpoolStatsApi.csproj",
         "packagesPath": "C:\\Users\\ohala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ohala\\Desktop\\LiverpoolStatsApi\\obj\\",
+        "outputPath": "C:\\Users\\ohala\\desktop\\LiverpoolStatsApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ohala\\AppData\\Roaming\\NuGet\\NuGet.Config"

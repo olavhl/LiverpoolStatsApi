@@ -36,24 +36,5 @@ namespace LiverpoolStatsApi.Controllers
                 return StatusCode(500);
             }
         }
-
-        [HttpDelete]
-        [Route("[action]")]
-        public ActionResult DeleteImage( string imageName )
-        {
-            string webRootPath = _hosting.WebRootPath;
-            string absolutePath = Path.Combine( $"{webRootPath}/images/${imageName}" );
-
-            try
-            {
-                System.IO.File.Delete(absolutePath);
-                return StatusCode(202);
-            }
-            catch
-            {
-                return StatusCode(500);
-            }
-        }
-
     }
 }
