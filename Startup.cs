@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Options;
 using LiverpoolStatsApi.Models;
 using LiverpoolStatsApi.Services;
+using LiverpoolStatsApi.DatabasseSettings;
 
 
 namespace LiverpoolStatsApi
@@ -40,6 +41,7 @@ namespace LiverpoolStatsApi
             );
 
             services.AddSingleton<PlayerService>();
+            services.AddSingleton<TeamSelectionService>();
             // Handling CORS
             services.AddCors(
                 options => {
@@ -51,7 +53,6 @@ namespace LiverpoolStatsApi
                     );
                 }
             );
-
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

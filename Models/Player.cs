@@ -1,9 +1,10 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using LiverpoolStatsApi.Interfaces;
 
 namespace LiverpoolStatsApi.Models
 {
-    public class Player
+    public class Player : IPlayer
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

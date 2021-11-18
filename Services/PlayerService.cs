@@ -2,6 +2,7 @@ using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Linq;
 using LiverpoolStatsApi.Models;
+using LiverpoolStatsApi.DatabasseSettings;
 
 namespace LiverpoolStatsApi.Services
 {
@@ -12,8 +13,8 @@ namespace LiverpoolStatsApi.Services
         public PlayerService(ILiverpoolStatsDatabaseSettings settings)
         {
             var client = new MongoClient( settings.ConnectionString );
-                var database = client.GetDatabase( settings.DatabaseName );
-                _players = database.GetCollection<Player>( settings.PlayersCollectionName );
+            var database = client.GetDatabase( settings.DatabaseName );
+            _players = database.GetCollection<Player>( settings.PlayersCollectionName );
         }
 
         public List<Player> GetPlayers()
